@@ -1,0 +1,32 @@
+body {
+  font-size: 1rem;
+  font-family: $poppins;
+}
+.app-content {
+  background: $white;
+  color: $fontColor;
+  word-spacing: 3px;
+  margin-top: 4.5rem;
+  @media screen and (max-width: 991.98px) {
+    margin-top: 60px;
+  }
+  @media screen and (max-width: 575.98px) {
+    margin-top: 90px;
+  }
+}
+.form-control {
+  caret-color: $active;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: $darkTextMuted;
+  background-color: $darkMain !important;
+  transition: background-color 5000s ease-in-out 0s;
+}

@@ -1,0 +1,16 @@
+@mixin link {
+  text-decoration: none;
+}
+@mixin flexJA($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin flexJ($justify) {
+  display: flex;
+  justify-content: $justify;
+}
+@mixin flexA($align) {
+  display: flex;
+  align-items: $align;
+}

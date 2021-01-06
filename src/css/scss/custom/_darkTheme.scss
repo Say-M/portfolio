@@ -1,0 +1,59 @@
+.app-content.dark-theme {
+  background: $darkMain;
+  color: $darkFontColor;
+
+  //overwrite
+  input, textarea {
+    background: #00000040;
+    color: $darkFontColor
+  }
+  .text-muted {
+    color: $darkTextMuted !important;
+  }
+  .bg-light {
+    background-color: $darkSecondary !important;
+  }
+  .shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.475) !important;
+  }
+  //header
+  .navbar-wrapper {
+    background: $darkMain;
+    .logo {
+      color: $white;
+    }
+    ul li a {
+      color: $darkFontColor;
+      &.active {
+        span {
+          color: $white;
+          background: $darkSecondary;
+        }
+      }
+    }
+  }
+
+  //home
+  .lead ul li a {
+    color: $darkTextMuted;
+  }
+  //services
+  .services .item {
+    border-color: $darkMain;
+    &:hover {
+      border-color: $active;
+      background: $darkMain;
+      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15) !important;
+    }
+  }
+
+  //experience
+  .experience span {
+    background: #23262f;
+  }
+
+  //blog
+  .blog .post {
+    background: $darkMain;
+  }
+}
